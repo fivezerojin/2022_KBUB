@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="txt_saver" type="txt_saver.py" output="screen" name="txt_saver"/>
+    <arg name="산학3" default="x_y_path" />
+
+</launch>

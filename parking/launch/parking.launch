@@ -1,0 +1,7 @@
+
+<launch>
+
+  <node pkg="parking" type="parking" name="parking"/>
+  <node pkg="rviz" type="rviz" name="rviz_2" output="screen" args = "-d $(find parking)/rviz/camara.rviz"/>
+
+</launch>

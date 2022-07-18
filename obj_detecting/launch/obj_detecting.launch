@@ -1,0 +1,10 @@
+
+<launch>
+
+  <!--<node pkg="obj_detecting" type="obj_detecting" name="obj_detecting" output="screen"/>-->
+  <node pkg="obj_detecting" type="obj_detecting" name="obj_detecting" />
+  <include file="$(find darknet_ros)/launch/yolo_v4.launch">
+
+  </include>
+
+</launch>

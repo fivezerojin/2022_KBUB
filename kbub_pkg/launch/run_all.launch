@@ -1,0 +1,30 @@
+<launch>
+
+    <param name="use_sim_time" value="false"/>
+    
+    <!--3d lidar operation -->
+    <include file="$(find velodyne_filter)/launch/parking.launch" />
+
+    <!--2d lidar operation -->
+    <include file="$(find sick_filter)/launch/sick_dynamic.launch" />
+    <node pkg="sick_filter" type="sick_fixed" name="sick_fixed_node"/>
+
+    <!-- camera operation -->
+    <!-- <node pkg="serial_example" type="camera_test" name="camera_test_node"/>
+    <node pkg="serial_example" type="main" name="main_node"/> -->
+
+    <!-- kbub operation -->
+    <node pkg="kbub_pkg" type="plan" name="plan_node"/>
+
+    <!-- signsender operation -->
+    <!-- <node name="signs_node" pkg="signs_sender" type="signs.py"/> -->
+
+    <!--nmea_navsat operation -->
+    <include file="$(find nmea_navsat_driver)/launch/nmea_serial_driver.launch"/>
+
+    <!-- serial operation -->
+    <node pkg="control_to_serial" type="Serial" name="Serial_node"/>
+    <node pkg="control_to_serial" type="stanley" name="stanley_node"/>
+
+
+</launch>

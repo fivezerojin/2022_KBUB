@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/usera/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/usera/catkin_ws/src/control_to_serial/include/**",
+        "/home/usera/catkin_ws/src/imu_serial_publisher/include/**",
+        "/home/usera/catkin_ws/src/jsoncpp_gps/include/**",
+        "/home/usera/catkin_ws/src/kbub_pkg/include/**",
+        "/home/usera/catkin_ws/src/nmea_vtg_reader/include/**",
+        "/home/usera/catkin_ws/src/ros_tutorials_topic/include/**",
+        "/home/usera/catkin_ws/src/sick_filter/include/**",
+        "/home/usera/catkin_ws/src/sick_scan/include/**",
+        "/home/usera/catkin_ws/src/signs_detection/include/**",
+        "/home/usera/catkin_ws/src/stop_line/include/**",
+        "/home/usera/catkin_ws/src/velodyne/velodyne_driver/include/**",
+        "/home/usera/catkin_ws/src/velodyne_filter/include/**",
+        "/home/usera/catkin_ws/src/velodyne/velodyne_laserscan/include/**",
+        "/home/usera/catkin_ws/src/velodyne/velodyne_pcl/include/**",
+        "/home/usera/catkin_ws/src/velodyne/velodyne_pointcloud/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
